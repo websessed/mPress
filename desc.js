@@ -2,9 +2,10 @@
 /* 
 
     version 1:
-        -sign in via key phrase (private)
-        -user profile (id, bio, posts, views, join date [public]) 
-        -post metadata (views, likes, shares, mirrored count)
+        -sign in via key phrase (6 words)
+        -user signatures & id 
+        -user profile (id, bio, posts, views, join date) 
+        -post metadata (views, likes, shares, reposts)
         -blog editor with media support 
         -blog dashboard (
             new post, 
@@ -14,13 +15,14 @@
         )
 
 
+    version 2: 
+
     tech stack {
-        react (frontend)
-        bip39 + elliptic (phrase key)
-        ipfs (immutable, decentralized post storage)
-        nostr + public relays (post metadata indexing)
-        indexed-db (local storage for drafts/like/mirrored post cache)
-        dayjs (time formatting)
+        next, zustand, tiptap
+        node, express
+        postgre, ipfs
+        elliptic, bip39 + secp256k1
+        nostr + relays
     }
 
 
@@ -28,8 +30,10 @@
     -no (
         subscribing/following
         email, username, pwd; just id + key prhase 
-        altering or deletion posts 
+        altering or deletion of posts 
         account recovery 
+        tracking, censorship of authors 
+        ads
     )
 
     Philosophy
@@ -48,3 +52,4 @@
     -and... anyone who believes the internet should have a memory 
 
 */
+
