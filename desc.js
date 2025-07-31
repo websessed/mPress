@@ -11,7 +11,7 @@
             new post, 
             view published, 
             view drafts, 
-            view liked/shared/mirrored posts 
+            view liked/shared/reposts
         )
 
 
