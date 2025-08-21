@@ -4,14 +4,13 @@
 core features:
     -auth via keyphrase (12word mnemonic)
     -explore feed (filter by new, past)
-    -search (topic, tag, pubkey)
-    -post metadata (views, upvotes, reposts)
+    -post metadata (views, upvotes)
     -user dashboard {
         pubkey, bio, post count, date joined 
         publish new, published, drafts 
     }
-    thread support 
-    settings 
+    -media support 
+    -settings 
     
 no:
     usernames
